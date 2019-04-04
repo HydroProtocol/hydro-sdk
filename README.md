@@ -30,7 +30,6 @@ The native token for Hydro Protocol is completely opt-in - you are not required 
 0.  As a prerequisite, you must have `docker` and `docker-compose` installed.
 
     If not, you can follow [this link](https://docs.docker.com/compose/install/) to install them.
-    If you are new to docker and git, make sure you setup your git access key and ssh key.
 
 1.  Clone this repo
 
