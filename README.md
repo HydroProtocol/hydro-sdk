@@ -60,7 +60,7 @@ The native token for Hydro Protocol is completely opt-in - you are not required 
 
         - For Chrome [Download](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn).
         - For Firefox [Download](https://addons.mozilla.org/en-US/firefox/addon/ether-metamask/)
-        - For Brave, metamask is built-in. <a href="about:preferences#extensions" targert="_blank">Enable</a>
+        - For Brave, metamask is built-in. You can enable it at `about:preferences#extensions`.
 
     1.  Setup network
 
