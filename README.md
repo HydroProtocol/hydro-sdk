@@ -83,7 +83,7 @@ The native token for Hydro Protocol is completely opt-in - you are not required 
 
     Run the follow command in another terminal. It will start a simple maker to fill the orderbook of `HOT-DAI` market. You will see a live exchange in your browser now.
 
-        docker run --rm --net host hydroprotocolio/hydro-sdk-backend:latest maker
+        docker run --rm --net host hydroprotocolio/hydro-sdk-backend:1.2-beta maker
 
 1.  Get status
 
@@ -122,6 +122,12 @@ The native token for Hydro Protocol is completely opt-in - you are not required 
         docker-compose pull && docker-compose up -d
 
     Always pull latest images before docker-compose up (If image doesn't have new version, will not pull).
+
+## Deposit Mode
+
+0. Change enviroment `PROXY_MODE` to `deposit` in `docker-compose.yml` file.
+
+1. Change enviroment `PROXY_ADDRESS` to DepositProxy address which you can find at https://github.com/HydroProtocol/hydro-sdk.
 
 ## What comes with the SDK?
 
