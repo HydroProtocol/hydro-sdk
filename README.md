@@ -2,7 +2,7 @@
 
 This repository will guide you through setting up your own Hydro Relayer on the Ethereum blockchain. With a simple docker-compose command, you can have a fully functional Hydro Relayer running on your local server.
 
-Hydro SDK consists of two parts. This repository describes how to use them together, but not contians any codes. If you want to dig into codes, Please move to the corresponding repository for more details.
+Hydro SDK consists of two parts. This repository describes how to use them together, but not contains any code. If you want to dig into the code, please move to the corresponding repositories for more details:
 
 - [Hydro-SDK-web](https://github.com/hydroprotocol/hydro-sdk-web)
 - [Hydro-SDK-backend](https://github.com/hydroprotocol/hydro-sdk-backend)
@@ -46,7 +46,8 @@ The native token for Hydro Protocol is completely opt-in - you are not required 
     This step may takes a few minutes to prepare all envs.
     When complete, this will start all necessary services in docker.
 
-    It will use ports `3000`, `3001`, `3002`, `6379`, `8545` on your computer. Please make sure theses ports are available.
+    It will use ports `3000`, `3001`, `3002`, `6379`, `8545` on your computer. Please make sure these ports are available.
+    *Note - For Windows 10 Home edition, you will need to do some port forwarding for all of the above in your VirtualBox Manager (Settings -> Network -> Port Forwarding -> add the above to host and guest ports)
 
 1.  View Relayer
 
@@ -70,7 +71,7 @@ The native token for Hydro Protocol is completely opt-in - you are not required 
 
     1.  Import an account
 
-        We have already prepare an address for you. The private key is `0xb7a0c9d2786fc4dd080ea5d619d36771aeb0c8c26c290afd3451b92ba2b7bc2c`, address is `0x31ebd457b999bf99759602f5ece5aa5033cb56b3`.
+        We have already prepared an pre-filled address for you. The private key is `0xb7a0c9d2786fc4dd080ea5d619d36771aeb0c8c26c290afd3451b92ba2b7bc2c`, address is `0x31ebd457b999bf99759602f5ece5aa5033cb56b3`.
 
         Import the private key into your metamask then switch to this account.
 
@@ -78,9 +79,9 @@ The native token for Hydro Protocol is completely opt-in - you are not required 
 
         Now you are free to play around with hydro-sdk-web on `http://localhost:3000/`.
 
-1.  Launch a simple maker
+1.  Launch a simple maker bot
 
-    Run the follow command in another terminal. It will start a simple maker to fill the orderbook of `HOT-DAI` market. You will see a live exchange in your browser now.
+    Run the following command in another terminal. It will start a simple order maker to fill the orderbook of `HOT-DAI` market. You will see a live exchange in your browser now.
 
         docker run --rm --net host hydroprotocolio/hydro-sdk-backend:latest maker
 
