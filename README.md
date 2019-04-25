@@ -2,7 +2,7 @@
 
 This repository will guide you through setting up your own Hydro Relayer on the Ethereum blockchain. With a simple docker-compose command, you can have a fully functional Hydro Relayer running on your local server.
 
-Hydro SDK consists of two parts. This repository describes how to use them together, but not contains any code. If you want to dig into the code, please move to the corresponding repositories for more details:
+Hydro SDK consists of two parts. This repository describes how to use them together, but does not contain any code. If you want to dig into the code, please move to the corresponding repositories for more details:
 
 - [Hydro-SDK-web](https://github.com/hydroprotocol/hydro-sdk-web)
 - [Hydro-SDK-backend](https://github.com/hydroprotocol/hydro-sdk-backend)
